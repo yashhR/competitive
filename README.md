@@ -15,3 +15,7 @@ Getting familiar with coding interview questions with Talentio
 # HackWithInfy
 
 Questions and solutions of HWI mock tests
+
+# Techniques
+
+This will contain algorithms/techniques that help reduce time complexity of our programs
