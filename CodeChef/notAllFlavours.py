@@ -32,12 +32,14 @@ t = int(input())
 def longest_sub():
     n, k = map(int, input().split())
     flavours = list(map(int, input().split()))
+    eachLarge = []
     for i in range(n-1):
-        for j in range(n-1, 0, -1):
+        for j in range(n-1, i, -1):
             c = len(set(flavours[i:j+1]))
             if c < k:
-                return len(flavours[i:j+1])
-
+                eachLarge.append(len(flavours[i:j+1]))
+                break
+    return max(eachLarge)
 
 for i in range(t):
     print(longest_sub())
