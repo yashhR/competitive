@@ -32,10 +32,13 @@ def get_products_of_all_ints_except_at_index(int_list):
         lefts = {0: 1}
         rights = {n-1: 1}
         for i in range(1, n):
-            lefts[i] = int_list[i-1]*lefts[i-1]
+            lefts[i] = int_list[i-1] * lefts[i-1]
         for i in range(n-2, -1, -1):
-            rights[i] = int_list[i+1]*rights[i+1]
+            rights[i] = int_list[i+1] * rights[i+1]
         ans = []
         for i in range(n):
             ans.append(lefts[i]*rights[i])
         return ans
+
+
+print(get_products_of_all_ints_except_at_index([1, 2, 3, 4, 6]))

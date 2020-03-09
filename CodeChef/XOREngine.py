@@ -57,11 +57,14 @@ t = int(input())
 def ans():
     n, q = map(int, input().split())
     a = list(map(int, input().split()))
+    allasked = []
     while q:
-        p = int(input())
-        a = [p ^ f for f in a]
+        #p = int(input())
+        #a = [p ^ f for f in a]
+        allasked.append(int(input()))
         q -= 1
     count = 0
+    a = [allasked[-1] ^ f for f in a]
     for i in range(len(a)):
         if len([x for x in bin(a[i]) if x == '1']) % 2 == 0:
             count += 1
