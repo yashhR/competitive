@@ -1,0 +1,39 @@
+Okay, so this is my notes from the Editors class of the missing-semester course
+I think it is worth mentioning that I am using the vim editor to write this
+It takes time to get used to these commands, but I can already see how helpful and 
+productive it is going to be.
+
+
+def yo_mama(limit):
+    for i in range(1, limit):
+        if i % 3 == 0:
+            print("Yo mama", end=" ")
+        if i % 5 == 0:
+            print("so fat", end=" ")
+        if i % 3 and i % 5 == 0:
+            print("her car has stretch marks")
+def main():
+    yo_mama(10)
+if __name__ == '__main__':
+    main()
+
+The above lines of code, I first wrote them out, just like I would in Pycharm or VS Code,
+but then I edited them using vim commands. Some of them are:
+1. I used G to go to the bottom of the present page, and I used gg to get to the starting
+2. I used the /(word) command a lot to navigate my cursor to the first occurance of that word
+3. I used ci( a lot, because I had three print functions in my code, and I used ci( to change
+everything inside them. ci( standing for change in parenthesis
+4. I also used $ a lot to get to the end of the line (trivial)
+5. I used the j and k a lot to move down and up between the lines
+6. I also used the . facility that just replicates the last edit that you've done.
+   As you can observe, my first 2 print statements have the end argument in them, and
+   I obviously didn't want to write them again and again. So I did the change in the first 
+   print function, and then I went two lines down using k and then k. And then I just did .
+  Voila!
+
+
+That's about it for today's vim session and I am looking forward to get onto vimgolf and have a lot of
+fun there! 
+P.S: I don't know how to get rid of the highlighted print words, they have been so since I used
+the /print command to search for the print statement in my code. Let me know how to do that!
+
