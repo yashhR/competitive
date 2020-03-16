@@ -9,6 +9,7 @@ output: 5
 '''
 
 '''
+------------------------------------------------------------------------------------------------------------------------
 Naive approach:
 
 1. You go through every element of the first list and check if it is in the second list and
@@ -56,6 +57,7 @@ that is, by using the "in" operator. This is essentially the exact same approach
 '''
 
 '''
+------------------------------------------------------------------------------------------------------------------------
 def fancier_missing_element(list1, list2):
     for num1 in list1:
         if num1 not in list2:
@@ -79,7 +81,7 @@ LOOK UP in O(1) time, what data structure does that? HASH tables
 Khatham.
 '''
 '''
-
+------------------------------------------------------------------------------------------------------------------------
 def find_missing_using_ht(list1, list2):
     check = {}
     for num in list2:
@@ -98,8 +100,19 @@ This is O(n), but at the cost of some extra space, O(n) to be exact.
 '''
 But what if you don't have extra space, and still want to do it in O(n), you can think of sets
 '''
+'''
+------------------------------------------------------------------------------------------------------------------------
+If there's ONLY ONE element, that is missing, WHY NOT JUST GET THE DIFFERENCE OF SUMS OF BOTH LISTS?
+
+def find_missing_using_sums(list1, list2):
+    return sum(list1)-sum(list2)
+
+print(find_missing_using_sums([4, 9, 12, 65, 5],[65, 9, 12, 4]))
+'''
+
 
 '''
+------------------------------------------------------------------------------------------------------------------------
 def missing_element_using_sets(list1, list2):
     #missing = set(list1).difference(set(list2))
     missing = set(list1) - set(list2)
@@ -120,7 +133,8 @@ Analysis:
     There is no way you can find the missing element in less than O(n) unless the given list is specified as sorted
 '''
 
-
+'''
+------------------------------------------------------------------------------------------------------------------------
 def missing_element_with_xor(list1, list2):
     xor_sum = 0
     for num in list1:
@@ -132,7 +146,7 @@ def missing_element_with_xor(list1, list2):
 
 print(missing_element_with_xor([4, 9, 12, 69, 5], [12, 69, 9, 4]))
 
-
+'''
 '''
 (x ^ y) = z
 (z ^ y) = x
