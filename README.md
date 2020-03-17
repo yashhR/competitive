@@ -23,3 +23,7 @@ Questions and solutions of HWI mock tests
 ## Techniques
 
 This will contain algorithms/techniques that help reduce time complexity of our programs
+
+### Two bibles of coding interviews
+1. Cracking the Coding Interview (CtCI)
+2. Programming Interview Exposed (PEI)
