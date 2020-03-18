@@ -86,3 +86,23 @@ def two_sum_in_one_pass(nums, target):
 
 
 print(two_sum_in_one_pass(nums, target))         # Output: [0, 1]
+
+
+'''
+Learnings and take-aways:
+
+1. Use hash tables for lookups
+2. When creating hash tables, store the indices as the values in the dictionary instead of any dummy value
+3. Use the enumerate option to do the above:
+    enumerate works as below:
+    for idx, num in enumerate(nums):
+    -- the unpacking is done in a way that the idx takes value 0, as default, and num takes the values in the array
+       you can change the way you start evaluating the idx values.
+       
+    for idx, num in enumerate(nums, 100) -- here 100 acts as the starting value of idx,
+    
+    DO NOT GET CONFUSED BETWEEN THE ORDER OF THE MAPPING.
+    the unpacking IS NOT DONE respectively.
+4. Utilize the values when you are looping through the array in the process of creating the hash table
+ 
+'''
