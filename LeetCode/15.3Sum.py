@@ -1,24 +1,24 @@
-def threeSum(nums):
-    nums.sort()
-    print(nums)
-    lookup = {}
-    triplets = []
-    tripsHash = {}
-    for i in range(len(nums)):
-        lookup[nums[i]] = i
-    for i in range(len(nums)):
-        for j in range(i + 1, len(nums)):
-            pT = 0 - nums[i] - nums[j]
-            if pT in lookup and lookup[pT] != i and lookup[pT] != j:
-                pos = [nums[i], nums[j], pT]
-                pos.sort()
-                if f"{pos}" not in tripsHash:
-                    triplets.append(pos)
-                    tripsHash[f"{pos}"] = True
-    return triplets
-
-
-print(threeSum([-1, 0, 1, 2, -1, 4]))
+# def threeSum(nums):
+#     nums.sort()
+#     print(nums)
+#     lookup = {}
+#     triplets = []
+#     tripsHash = {}
+#     for i in range(len(nums)):
+#         lookup[nums[i]] = i
+#     for i in range(len(nums)):
+#         for j in range(i + 1, len(nums)):
+#             pT = 0 - nums[i] - nums[j]
+#             if pT in lookup and lookup[pT] != i and lookup[pT] != j:
+#                 pos = [nums[i], nums[j], pT]
+#                 pos.sort()
+#                 if f"{pos}" not in tripsHash:
+#                     triplets.append(pos)
+#                     tripsHash[f"{pos}"] = True
+#     return triplets
+#
+#
+# print(threeSum([-1, 0, 1, 2, -1, 4]))
 
 # from itertools import combinations
 #
@@ -45,3 +45,30 @@ i.e.,
 Make a set of given lists
 '''
 
+
+def threeSum(nums):
+    output_array = []
+    nums.sort()
+    print(nums)
+    for i in range(len(nums) - 2):
+        if i == 0 or (i > 0 and nums[i] != nums[i - 1]):
+            left = i + 1
+            right = len(nums) - 1
+            while left < right:
+                s = nums[i] + nums[left] + nums[right]
+                if s == 0:
+                    output_array.append([nums[i], nums[left], nums[right]])
+                    while left < right and nums[left] == nums[left+1]:
+                        left += 1
+                    while left < right and nums[right] == nums[right-1]:
+                        right -= 1
+                    left += 1
+                    right -= 1
+                elif s > 0:
+                    right -= 1
+                else:
+                    left += 1
+    return output_array
+
+
+print(threeSum([1, -1, -1, 0]))
