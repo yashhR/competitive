@@ -129,8 +129,18 @@ Analysis:
         
     SC: No extra space
     
-    This is the best we did till now, no extra space and linear time,
-    There is no way you can find the missing element in less than O(n) unless the given list is specified as sorted
+    **This is the best we did till now, no extra space and linear time,
+    There is no way you can find the missing element in less than O(n) unless the given list is specified as sorted**
+'''
+'''
+**EDIT**:
+    The above solution is NOT EXTRA SPACE! It is in fact, O(2N) extra space, whenever we are creating a set of 
+    elements, we are just basically adding elements to a set in O(N) time using O(N) space. So, that means,
+    O(n) time and O(n) space for making the set of 1st list
+    O(n) time and O(n) space for making the set of 1st list
+    O(n) time for the difference between both the sets.
+    
+    That is, O(3n) time and O(2n) space ~ O(n) time and O(n) space  
 '''
 
 '''
