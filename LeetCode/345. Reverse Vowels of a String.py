@@ -93,21 +93,18 @@ Note: Two pointer solutions are the best!
 #         # print(f"front: {front, all_chars[front]}, end = {end, all_chars[end]}")
 #         while True:
 #             if all_chars[front] in vowels:
-#                 ff = True
 #                 break
 #             else:
 #                 front += 1
 #         # print(f"front: {front, all_chars[front]}, end = {end, all_chars[end]}")
 #         while True:
 #             if all_chars[end] in vowels:
-#                 fe = True
 #                 break
 #             else:
 #                 end -= 1
 #         # print(f"front: {front, all_chars[front]}, end = {end, all_chars[end]}")
-#         if ff and fe:
-#             all_chars[front], all_chars[end] = all_chars[end], all_chars[front]
-#             count -= 1
+#         all_chars[front], all_chars[end] = all_chars[end], all_chars[front]
+#         count -= 1
 #         # print(all_chars)
 #     return ''.join(all_chars)
 #
