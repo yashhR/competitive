@@ -12,3 +12,6 @@ def max_sub_array(nums):
 
 print(max_sub_array([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
 # This solution beats 82.31% of all python solutions
+
+
+# 2, 3, -4, 9
