@@ -18,4 +18,4 @@ for _ in range(t):
             print(profit)
             break
     if not done:
-        print(profit)
+        print(profit % 1000000007)
