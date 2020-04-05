@@ -9,14 +9,15 @@ for _ in range(t):
     count = 0
     while i <= m - n:
         possible_answer = bobs[i:i+n]
-        print(possible_answer)
+        bitch = abs(password[0] - possible_answer[0])
         answer = False
-        for j in range(n):
-            if abs(password[j]-possible_answer[j]) <= x:
-                answer = True
-            else:
-                answer = False
-                break
+        if bitch <= x:
+            for j in range(n):
+                if abs(password[j]-possible_answer[j]) == bitch:
+                    answer = True
+                else:
+                    answer = False
+                    break
         if answer:
             count += 1
         i += 1
