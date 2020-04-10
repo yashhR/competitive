@@ -14,4 +14,4 @@ def solution(nums):
     return ret_list
 
 
-print(solution([-1, 0, 1, 2, 6, 7, 9]))
+print(solution([-5, 3, 4, 5, 20, 21, 22]))
