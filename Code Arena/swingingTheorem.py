@@ -86,7 +86,7 @@ for each in lols:
 print(ret)
 
 '''
-Lol, guess what! I knew it works but I didn't think the hackerrank judge would accept it because its just
+Lol, guess what! I knew it works but I didn't think the hackerearth judge would accept it because its just
 brute-force and possibly uses up more memory and time than thats allocated.
 
 I submitted the code 1 minute before the timer and it got accepted.

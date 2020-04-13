@@ -1,38 +1,23 @@
-import itertools
+from itertools import combinations
+
 s1, s2 = input().split()
-# print(s1, s2)
 
-def no_vowels(some):
-    for c in some:
-        if c in 'aeiouAEIOU':
-            return False
-    return True
 
-def Sub_Sequences(STR):
-    combs = []
-    ret = []
-    for l in range(1, len(STR)+1):
-        combs.append(list(itertools.combinations(STR, l)))
-    for each in combs:
-        for i in range(len(each)):
-            if no_vowels(each[i]):
-                each[i] = ''.join(each[i])
-                ret.append(each[i])
-    return ret
+set1 = set(s1)
+set2 = set(s2)
 
-def intersection(lst1, lst2):
-    lst3 = [list(filter(lambda x: x in lst1, sublist)) for sublist in lst2]
-    return lst3
 
-subsA = Sub_Sequences(s1)
-# print(subsA)
-subsB = Sub_Sequences(s2)
-# print(subsB)
-subs = intersection(subsA, subsB)
-for i in range(len(subs)):
-    subs[i] = ''.join(subs[i])
-# print(subs)
-subs.sort(key = lambda x: len(x))
-# print(subs)
+set1 = set1.intersection(set2)
 
-print(len(subs[-1]))
+set1 = list(set1)
+print(set1)
+set1[:] = [x for x in set1 if x not in set("AEIOUaeiou")]
+print(set1)
+# possis = []
+#
+# for i in range(1, len(set1)):
+#     possis.append(list(combinations(set1, r=i)))
+#
+# for i in range(len(possis)):
+#     possis[i] = ''.join(possis[i])
+
