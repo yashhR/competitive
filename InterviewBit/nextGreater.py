@@ -73,4 +73,4 @@ def nextGreater(A):
     return gts[::-1]
 
 
-print(nextGreater([4, 5, 6, 10]))
+print(nextGreater([4, 5, 1, 2, 3, 4, 10]))
