@@ -22,6 +22,11 @@ while t:
     t -= 1
 
 '''
+Main optimization point:
+using a set() so that the lookup become O(1) and hence making the tc as O(n) + O(n) rather than O(n^2   )
+'''
+
+'''
 Input:
 2
 5 5 9

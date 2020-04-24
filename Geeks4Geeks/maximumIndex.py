@@ -14,6 +14,14 @@ while t:
     print(maxi)
     t -= 1
 
+
+'''
+Main opti point:
+First pointer goes through every element from the beginning, and for every element, the second pointer starts from the
+end because we want to find the farthest index where the first element is lesser than second.
+
+So, mop is starting from the end.
+'''
 '''
 Input:
 1
