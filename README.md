@@ -6,16 +6,27 @@ Please feel free to make changes to existing code or contribute new questions.
 
 Note: All solutions are in Python only.
 
-## 30Day LeetCode Challenge
+## 30Day LeetCode Challenge (Active)
 
 Solutions to daily challenge questions on LC.
 
+## ABC (Dead)
 
-## CodeChef
+AtCoder Beginner Contests (No longer participating)
+
+## Algorithms (Active)
+
+Notes and problems that help understand the fundamentals of a few problem-solving techniques
+
+## CodeChef (1646 - 3 star) (Active)
 
 Solutions to practice and challenge questions on CodeChef
 
-## Edyst
+## CodeForces (1343 - Pupil :( )(Active)
+
+Problems I could solve in cf contests
+
+## Edyst (Dead)
 
 Solutions of most questions on the edyst platform for the Advanced Algorithms and Data Structures course
 
@@ -23,17 +34,21 @@ Solutions of most questions on the edyst platform for the Advanced Algorithms an
 
 Random and interesting problems on G4G 
 
+## InterviewBit
+
+Random problems from interviewBit
+
 ## InterviewCake
 
 Notes and Solutions to questions from probably the best website to develop algorithmic thinking
 
-## LeetCode
+## LeetCode <3
 
 LeetCode grind
 
 ## Others
 
-Random questions that I felt were important or trash files to check if the function works or not
+Random questions that I felt were important or trash files for code snippets
 
 ## Soring Algorithms
 
